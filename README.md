@@ -1,4 +1,8 @@
 # Nephrologists
+![](https://img.shields.io/badge/version-1.0-<COLOR>)
+![](https://img.shields.io/badge/languaje-Java-<COLOR>)
+![](https://img.shields.io/badge/Framework-Spring-<COLOR>)
+![](https://img.shields.io/badge/DB-Postgresql-<COLOR>)
 
 ## Description
 
