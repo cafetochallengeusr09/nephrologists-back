@@ -26,7 +26,7 @@ catalog.
 
 ## Run
 ### Pre-Conditions
-* Run script locate in **nephrologists-back/sql/CREATE TABLES.sql**
+* Run script locate in **sql/CREATE TABLES.sql**
 ```batch
 mvn spring-boot:run
 ```
