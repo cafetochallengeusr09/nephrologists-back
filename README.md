@@ -47,7 +47,6 @@ spring.datasource.password=Usrdev2020*-
 ## Run
 ### Pre-Conditions
 * Run script locate in **sql/CREATE TABLES.sql**
-* Edit application.properties
 
 ### Run Server
 ```batch
@@ -89,3 +88,6 @@ Hibernate:
         clinictype0_.id=?
 
 ```
+
+## Services URL
+See more in [swagger](http://localhost:8080/api-docs/swagger-ui/index.html?configUrl=/api-docs/swagger-config#/)
