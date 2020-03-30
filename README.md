@@ -23,3 +23,6 @@ catalog.
 
 ## Data Base Design
 ![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/1.png)
+
+## Unit Test
+![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/2.png)
