@@ -24,9 +24,30 @@ catalog.
 ## Data Base Design
 ![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/1.png)
 
+## Database Connection
+
+### Dev Environment
+* Please open file **application.integration.properties** locate in **/src/main/resources**
+* Edit the next values:
+```batch
+spring.datasource.url=jdbc:postgresql://192.168.2.12:5432/postgres?currentSchema=cafeto_challenge_janez
+spring.datasource.username=postgres
+spring.datasource.password=Usrdev2020*-
+```
+
+### Live Environment
+* Please open file **application.properties** locate in **/src/main/resources**
+* Edit the next values:
+```batch
+spring.datasource.url=jdbc:postgresql://192.168.2.12:5432/postgres?currentSchema=cafeto_challenge_janez
+spring.datasource.username=postgres
+spring.datasource.password=Usrdev2020*-
+```
+
 ## Run
 ### Pre-Conditions
 * Run script locate in **sql/CREATE TABLES.sql**
+* Edit application.properties
 
 ### Run Server
 ```batch
