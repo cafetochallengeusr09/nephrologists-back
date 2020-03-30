@@ -27,6 +27,8 @@ catalog.
 ## Run
 ### Pre-Conditions
 * Run script locate in **sql/CREATE TABLES.sql**
+
+### Run Server
 ```batch
 mvn spring-boot:run
 ```
