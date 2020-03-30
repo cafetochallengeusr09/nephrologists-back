@@ -25,7 +25,7 @@ catalog.
 ![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/1.png)
 
 ## Run
-###Pre-Conditions
+### Pre-Conditions
 * Run script locate in **nephrologists-back/sql/CREATE TABLES.sql**
 ```batch
 mvn spring-boot:run
