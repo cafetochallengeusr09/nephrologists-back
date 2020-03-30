@@ -6,14 +6,12 @@ import com.cafeto.challenge.clinic.model.Clinic;
 import com.cafeto.challenge.clinic.service.ClinicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(Constants.URI_CLINIC)
 @Lazy
-@CrossOrigin
 public class ClinicController extends ControllerBase<Clinic> {
 
     @Autowired

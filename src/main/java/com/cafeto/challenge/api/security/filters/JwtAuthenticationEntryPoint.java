@@ -1,4 +1,4 @@
-package com.cafeto.challenge.api.security;
+package com.cafeto.challenge.api.security.filters;
 
 import java.io.IOException;
 import java.io.Serializable;

@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(Constants.URI_AUTH)
 @Lazy
-@CrossOrigin
 @Slf4j
 public class AuthController {
 
