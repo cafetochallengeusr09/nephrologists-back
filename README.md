@@ -58,6 +58,10 @@ mvn spring-boot:run
 ```
 
 ## Unit Test
+### Run All Test
+```batch
+mvn surefire:test -Dtest=GlobalTest
+```
 ![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/2.png)
 
 ## Logs
