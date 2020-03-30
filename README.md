@@ -20,3 +20,6 @@ catalog.
 * Clinic Type [Id, Description]
 * City [Id, Description, Zone]
 * Zone [Id, Description]
+
+## Data Base Design
+![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/1.png)
