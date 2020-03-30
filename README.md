@@ -24,6 +24,11 @@ catalog.
 ## Data Base Design
 ![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/1.png)
 
+## Run
+```batch
+mvn spring-boot:run
+```shell
+
 ## Unit Test
 ![](https://github.com/cafetochallengeusr09/nephrologists-back/blob/master/docs/img/2.png)
 
