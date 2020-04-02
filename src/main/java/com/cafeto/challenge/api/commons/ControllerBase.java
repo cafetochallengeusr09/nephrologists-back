@@ -11,8 +11,6 @@ import java.util.Optional;
 
 /**
  * @author janezmejias.09
- * @version SPRINT-2020A
- * @see <url_jira_ticket_here>
  */
 @Slf4j
 public abstract class ControllerBase<T> {

@@ -1,6 +1,7 @@
 package com.cafeto.challenge.helper;
 
 import com.cafeto.challenge.api.commons.Constants;
+import com.cafeto.challenge.api.security.helper.SecurityConstants;
 import com.cafeto.challenge.api.security.service.JwtTokenHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class HttpMockMvcComponent {
     }
 
     /**
-     * @param uri END_POINT to send GET request. i.e "city"
+     * @param uri END_POINT to send GET request. i.e "/api/v1/s1/city/listAll"
      * @return RequestBuilder
      */
     public RequestBuilder getAll(String uri) {
@@ -36,12 +37,12 @@ public class HttpMockMvcComponent {
                 .get(uri + Constants.HTTP_GET_ALL)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .header("Authorization", "Bearer " + token);
+                .header(SecurityConstants.AUTHORIZATION, SecurityConstants.BEARER + token);
     }
 
     /**
+     * @param uri END_POINT to send GET request. i.e "/api/v1/s1/city/1"
      * @param id  Key of POJO with Long data type
-     * @param uri END_POINT to send GET request. i.e "city"
      * @return RequestBuilder
      */
     public RequestBuilder getById(String uri, Long id) {
@@ -49,12 +50,12 @@ public class HttpMockMvcComponent {
                 .get(uri + "/" + id)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .header("Authorization", "Bearer " + token);
+                .header(SecurityConstants.AUTHORIZATION, SecurityConstants.BEARER + token);
     }
 
     /**
+     * @param uri END_POINT to send GET request. i.e "/api/v1/s1/city/create"
      * @param content POJO with JSON format
-     * @param uri     END_POINT to send POST request. i.e "city"
      * @return RequestBuilder
      */
     public RequestBuilder post(String uri, String content) {
@@ -62,13 +63,13 @@ public class HttpMockMvcComponent {
                 .post(uri + Constants.HTTP_POST, content)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .header("Authorization", "Bearer " + token)
+                .header(SecurityConstants.AUTHORIZATION, SecurityConstants.BEARER + token)
                 .content(content);
     }
 
     /**
+     * @param uri END_POINT to send GET request. i.e "/api/v1/s1/city/update"
      * @param content POJO with JSON format
-     * @param uri     END_POINT to send PUT request. i.e "city"
      * @return RequestBuilder
      */
     public RequestBuilder put(String uri, String content) {
@@ -76,12 +77,12 @@ public class HttpMockMvcComponent {
                 .put(uri + Constants.HTTP_PUT, content)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .header("Authorization", "Bearer " + token)
+                .header(SecurityConstants.AUTHORIZATION, SecurityConstants.BEARER + token)
                 .content(content);
     }
 
     /**
-     * @param uri END_POINT to send PUT request. i.e "city"
+     * @param uri END_POINT to send GET request. i.e "/api/v1/s1/city/delete/2"
      * @param id  Key of POJO with Long data type
      * @return
      */
@@ -90,7 +91,7 @@ public class HttpMockMvcComponent {
                 .delete(uri + Constants.HTTP_DELETE + "?id=" + id)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .header("Authorization", "Bearer " + token);
+                .header(SecurityConstants.AUTHORIZATION, SecurityConstants.BEARER + token);
     }
 
 }

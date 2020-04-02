@@ -37,7 +37,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
             String header = request.getHeader(SecurityConstants.AUTHORIZATION);
 
             if (StringUtils.isEmpty(header) || !header.startsWith(SecurityConstants.BEARER)) {
-                chain.doFilter(request, response);
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Invalid token");
                 return;
             }
 
