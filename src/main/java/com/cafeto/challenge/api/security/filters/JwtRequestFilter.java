@@ -36,8 +36,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
             log.info("INTERCEPT URL {}", request.getRequestURI());
             String header = request.getHeader(SecurityConstants.AUTHORIZATION);
 
-            if (StringUtils.isEmpty(header) || !header.startsWith(SecurityConstants.BEARER)) {
-                chain.doFilter(request, response);
+            if (StringUtils.isEmpty(header) || !header.startsWith(SecurityConstants.BEARER)) {                
                 return;
             }
 
