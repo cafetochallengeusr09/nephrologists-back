@@ -1,9 +1,5 @@
 # Nephrologists
 ![Java CI with Maven](https://github.com/cafetochallengeusr09/nephrologists-back/workflows/Java%20CI%20with%20Maven/badge.svg)
-![](https://img.shields.io/badge/version-1.0-<COLOR>)
-![](https://img.shields.io/badge/languaje-Java-<COLOR>)
-![](https://img.shields.io/badge/Framework-Spring-<COLOR>)
-![](https://img.shields.io/badge/DB-Postgresql-<COLOR>)
 
 ## Description
 
