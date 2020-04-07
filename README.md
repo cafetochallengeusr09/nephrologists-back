@@ -1,5 +1,6 @@
 # Nephrologists
 ![Java CI with Maven](https://github.com/cafetochallengeusr09/nephrologists-back/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/cafetochallengeusr09/nephrologists-back/badge)](https://www.codefactor.io/repository/github/cafetochallengeusr09/nephrologists-back)
 
 ## Description
 
