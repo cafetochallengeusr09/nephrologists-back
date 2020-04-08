@@ -67,7 +67,7 @@ mvn surefire:test -Dtest=GlobalTest
 ## Logs
 ```shell
 2020-03-29 19:08:58.945  INFO 7370 --- [nio-8080-exec-9] c.c.c.a.s.JwtRequestFilter : INTERCEPT URL /api/v1/s1/clinic-type/listAll
-2020-03-29 19:08:59.079  INFO 7370 --- [nio-8080-exec-9] c.c.c.a.c.ControllerBase   : GET ALL FROM -> com.cafeto.challenge.clinicType.service.ClinicTypeServiceHandler
+2020-03-29 19:08:59.079  INFO 7370 --- [nio-8080-exec-9] c.c.c.a.c.ControllerBase   : GET ALL FROM -> ClinicTypeServiceHandler
 Hibernate: 
     select
         clinictype0_.id as id1_2_,
@@ -75,7 +75,7 @@ Hibernate:
     from
         clinic_type clinictype0_
 2020-03-29 19:11:25.905  INFO 7370 --- [nio-8080-exec-2] c.c.c.a.s.JwtRequestFilter : INTERCEPT URL /api/v1/s1/clinic-type/386
-2020-03-29 19:11:26.069  INFO 7370 --- [nio-8080-exec-2] c.c.c.a.c.ControllerBase   : GET ONE FROM -> com.cafeto.challenge.clinicType.service.ClinicTypeServiceHandler WITH ID=386
+2020-03-29 19:11:26.069  INFO 7370 --- [nio-8080-exec-2] c.c.c.a.c.ControllerBase   : GET ONE FROM -> ClinicTypeServiceHandler WITH ID=386
 Hibernate: 
     select
         clinictype0_.id as id1_2_0_,
